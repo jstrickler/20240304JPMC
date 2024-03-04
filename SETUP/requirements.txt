@@ -1,0 +1,6 @@
+cookiecutter
+cython
+mypy
+numba
+pyparsing>=3.0
+requests
