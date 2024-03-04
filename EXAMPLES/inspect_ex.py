@@ -32,6 +32,11 @@ print()
 def spam(p1, p2='a', *p3, p4, p5='b', **p6):  # define a function
     print(p1, p2, p3, p4, p5, p6)
 
+
+spam(1, 2, 3, 4, 5, p4=6, p5=7, animal="wombat", country="Brazil")
+
+
+
 # get argument specifications for a function
 print("Function spec for Ham:", inspect.getfullargspec(spam))
 print()
