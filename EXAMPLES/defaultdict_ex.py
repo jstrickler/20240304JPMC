@@ -2,6 +2,11 @@ from collections import defaultdict
 
 dd = defaultdict(lambda: 0)  # create default dict with function that returns 0
 
+def get_zero():
+    return 0
+
+dd = defaultdict(get_zero)
+
 dd['spam'] = 10  # assign some values to the dict
 dd['eggs'] = 22
 
