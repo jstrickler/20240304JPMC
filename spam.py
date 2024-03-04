@@ -12,10 +12,20 @@ class Groot:
     def __add__(self, other):
         # check to see if 'other' is a Groot
         return [self, other]
-
+    
+    def __getitem__(self, item):
+        if isinstance(item, str):
+            return item.upper()
+        else:
+            raise ValueError("item must be a string!")
+        
 g = Groot()
 print(f"{type(g) = }")
 print(f"{g = }")  # calls repr() not str()
+
+print(f"{g['apple'] = }")
+# print(f"{g[4.9] = }")
+
 
 print(g)
 

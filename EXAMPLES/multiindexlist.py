@@ -27,6 +27,9 @@ if __name__ == '__main__':
     print(f"m[0]: {m[0]}")  # normal indexing
     print(f"m[5, 2, 0]: {m[5, 2, 0]}")  # multi-index with tuple
     print(f"m[:4]: {m[:4]}")  # normal slice
+    #  m[:4]  is same as m[0:4]
+    #  m[4:]  is same as m[4:len(m)-1]
+    #  m[:] is same as m[0:len(m) -1]
     print(f"len(m): {len(m)}")  # len() works normally
     print(f"m[5]: {m[5]}")  # get one item (normal behavior)
     print(f"m[5,]: {m[5,]}")  # get list with just one item [m[5]]
