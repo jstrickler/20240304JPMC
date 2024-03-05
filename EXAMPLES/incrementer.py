@@ -1,9 +1,10 @@
 class Incrementer:
-    def __init__(self):
+    def __init__(self, increment=1):
+        self._increment = increment
         self._value = 0
 
     def __call__(self):
-        self._value += 1
+        self._value += self._increment
 
     @property
     def value(self):
@@ -15,4 +16,9 @@ if __name__ == "__main__":
     inc()
     inc()
     print(f"inc.value: {inc.value}")
-    
+    # blah()
+
+def blah():
+    print("Hello from blah()")
+
+# blah()
