@@ -58,3 +58,6 @@ p.swim()
 #     pass
 
 # bosh = deco(1, 2, 3)(bosh)
+
+print(ham.__name__)
+print(soup.__name__)

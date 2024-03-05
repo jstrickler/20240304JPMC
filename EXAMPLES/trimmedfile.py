@@ -17,6 +17,6 @@ class TrimmedFile:
 
 if __name__ == '__main__':
     # To use the iterator, create an instance and iterate over it.
-    trimmed = TrimmedFile('../DATA/mary.txt')  
+    trimmed = TrimmedFile('../DATA/mary.txt')
     for line in trimmed:
         print(line)

@@ -25,8 +25,8 @@ class RandomWord():  # define callable class to generate words
 
 class Worker(Thread):  # worker thread
 
-    def __init__(self):  # thread constructor
-        Thread.__init__(self)
+    # def __init__(self):  # thread constructor
+    #     Thread.__init__(self)
 
     def run(self):  # function invoked by thread
         while True:
